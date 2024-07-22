@@ -1,1 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdint.h>
+#include <inttypes.h>
+
+
+
+//Compiler version gcc  6.3.0
+
+int main()
+{
+  __uint64_t a64 = 0x100000000UL;
+  printf("size of a64 = %zu.\n",sizeof(a64));
+  printf("a64 = %# "PRIx64".\n", a64 );
+  return 0;
+}
